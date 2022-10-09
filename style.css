@@ -3,3 +3,98 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: rgba(250, 235, 215, 0.3);
+  height: 100vh;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+h1 {
+  font-size: 32px;
+  color: rgba(165, 42, 42, 1);
+}
+
+.inputContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.inputContainer label {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.numberInput {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  outline: 0;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  width: 80px;
+  margin: 10px;
+  padding: 10px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.numberInput:hover {
+  box-shadow: 0 0 8px 1px rgba(165, 42, 42, 0.2);
+}
+
+.numberInput:focus {
+  border: 1px solid rgba(0, 0, 0, 0.6);
+  box-shadow: 0 0 8px 1px rgba(165, 42, 42, 0.2);
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  display: none;
+}
+
+.submitBtn {
+  border: 0;
+  border-radius: 10px;
+  padding: 10px 40px;
+  color: rgba(165, 42, 42, 1);
+  font-size: 14px;
+  font-weight: 700;
+
+}
+
+.submitBtn:hover {
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  box-shadow: 0 2px 4px 1px rgba(0, 0, 0, 0.4);
+}
+
+.submitBtn:active {
+  opacity: 0.8;
+  box-shadow: 0 2px 4px 1px rgba(0, 0, 0, 0.2);
+}
+
+.resultContainer {
+  margin: 10px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+span {
+  font-size: 18px;
+  font-weight: 900;
+}
+
+.gold {
+  color: rgb(216, 187, 2, 1);
+}
+.silver {
+  color: rgb(184, 182, 166, 1);
+}
+.bronze {
+  color: rgb(115, 90, 1);
+}
